@@ -1,0 +1,25 @@
+081110 084502 201 INFO dfs.DataNode$DataXceiver: Receiving block blk_4980916519894289629 src: /10.251.110.229:45192 dest: /10.251.110.229:50010
+081110 084503 202 INFO dfs.DataNode$PacketResponder: PacketResponder 1 for block blk_4980916519894289629 terminating
+081110 084505 203 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.110.229:50010 is added to blk_4980916519894289629 size 67108864
+081110 084510 204 INFO dfs.DataNode$DataXceiver: Receiving block blk_-7846812511920985673 src: /10.251.110.229:33456 dest: /10.251.110.229:50010
+081110 084515 205 WARN dfs.DataNode: Slow BlockReceiver for block blk_-7846812511920985673: 5003ms elapsed for 67108864 bytes
+081110 084520 206 WARN dfs.DataNode: Slow BlockReceiver for block blk_4980916519894289629: 15002ms elapsed for 67108864 bytes
+081110 084522 207 ERROR dfs.DataNode: 10.251.110.229:50010: Disk error on /data1/dfs/data: No space left on device
+081110 084523 208 ERROR dfs.DataNode: 10.251.110.229:50010: Disk error on /data2/dfs/data: No space left on device
+081110 084524 209 WARN dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.110.229:50010 is added to blk_-7846812511920985673 size 67108864
+081110 084525 210 ERROR dfs.DataNode: All directories in dfs.data.dir are in failed state
+081110 084526 211 ERROR dfs.DataNode: 10.251.110.229:50010: DataNode is shutting down due to failed volumes: [/data1/dfs/data, /data2/dfs/data]
+081110 084528 212 INFO dfs.DataNode$DataXceiver: Receiving block blk_1234567890123456789 src: /10.251.43.115:42189 dest: /10.251.43.115:50010
+081110 084530 213 WARN dfs.FSNamesystem: BLOCK* NameSystem.processReport: DataNode 10.251.110.229:50010 has no blocks
+081110 084532 214 ERROR dfs.FSNamesystem: BLOCK* NameSystem.processReport: DataNode 10.251.110.229:50010 removed from cluster
+081110 084535 215 INFO dfs.ReplicationMonitor: UnderReplicatedBlocks has 156 blocks
+081110 084538 216 WARN dfs.ReplicationMonitor: Block blk_4980916519894289629 is under-replicated: expected 3, actual 2
+081110 084540 217 WARN dfs.ReplicationMonitor: Block blk_-7846812511920985673 is under-replicated: expected 3, actual 2
+081110 084545 218 INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: /user/root/rand/_temporary/_task_200811100845_0003_m_000100_0/part-00100. blk_9283746501928374650
+081110 084548 219 ERROR dfs.DataNode: 10.251.43.115:50010: Failed to transfer block blk_9283746501928374650 to 10.251.110.229:50010: java.net.ConnectException: Connection refused
+081110 084550 220 WARN dfs.DataNode: 10.251.43.115:50010: Retrying block transfer blk_9283746501928374650 to alternate DataNode
+081110 084555 221 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.43.115:50010 is added to blk_9283746501928374650 size 67108864
+081110 084558 222 WARN dfs.FSNamesystem: Number of under-replicated blocks has exceeded threshold: 156 blocks need replication
+081110 084600 223 INFO dfs.ReplicationMonitor: Scheduling replication for 156 blocks from remaining live DataNodes
+081110 084605 224 WARN dfs.DataNode: 10.251.43.115:50010: High disk utilization at 92% on /data1/dfs/data
+081110 084610 225 INFO dfs.FSNamesystem: BLOCK* NameSystem.processReport: Received block report from 10.251.43.115:50010 with 4521 blocks

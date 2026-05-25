@@ -1,0 +1,30 @@
+081109 203615 148 INFO dfs.DataNode$PacketResponder: PacketResponder 1 for block blk_38865049064139660 terminating
+081109 203615 149 INFO dfs.DataNode$PacketResponder: PacketResponder 2 for block blk_38865049064139660 terminating
+081109 203615 150 INFO dfs.DataNode$DataXceiver: Receiving block blk_-1608999687919862906 src: /10.251.73.220:42557 dest: /10.251.73.220:50010
+081109 203615 151 INFO dfs.DataNode$DataXceiver: Receiving block blk_7503483334202473044 src: /10.251.42.84:56485 dest: /10.251.42.84:50010
+081109 203618 152 WARN dfs.DataNode$DataXceiver: IOException in BlockReceiver for block blk_-1608999687919862906: java.io.IOException: Connection reset by peer
+081109 203618 153 ERROR dfs.DataNode: 10.251.73.220:50010:DataXceiver: java.io.IOException: Connection reset by peer
+081109 203620 154 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.195.96:50010 is added to blk_7503483334202473044 size 67108864
+081109 203621 155 WARN dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: Redundant addStoredBlock request received for blk_38865049064139660 on 10.251.73.220:50010 size 67108864
+081109 203622 156 INFO dfs.DataNode$PacketResponder: PacketResponder 0 for block blk_7503483334202473044 terminating
+081109 203625 157 INFO dfs.DataNode$DataXceiver: Receiving block blk_-6670958622368987959 src: /10.251.42.84:48456 dest: /10.251.42.84:50010
+081109 203627 158 ERROR dfs.DataNode: 10.251.42.84:50010:DataXceiver: java.io.IOException: Broken pipe
+081109 203628 159 WARN dfs.DataNode$DataXceiver: IOException in BlockReceiver for block blk_-6670958622368987959: java.io.IOException: Broken pipe
+081109 203630 160 INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: /user/root/rand/_temporary/_task_200811092030_0001_m_000590_0/part-00590. blk_-3724437937924610552
+081109 203632 161 INFO dfs.DataNode$PacketResponder: PacketResponder 2 for block blk_-3724437937924610552 terminating
+081109 203635 162 ERROR dfs.DataNode: 10.251.195.96:50010:DataXceiver: java.io.IOException: Connection reset by peer
+081109 203636 163 WARN dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: Redundant addStoredBlock request received for blk_-6670958622368987959 on 10.251.42.84:50010 size 67108864
+081109 203638 164 INFO dfs.DataNode$DataXceiver: Receiving block blk_2550793407016982932 src: /10.251.195.96:41962 dest: /10.251.195.96:50010
+081109 203640 165 ERROR dfs.DataNode: 10.251.195.96:50010:DataXceiver: java.io.IOException: Connection reset by peer
+081109 203642 166 WARN dfs.DataNode$DataXceiver: IOException in BlockReceiver for block blk_2550793407016982932: java.io.IOException: Connection reset by peer
+081109 203645 167 ERROR dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: block blk_2550793407016982932 not in any file. Replication monitor will handle.
+081109 203648 168 INFO dfs.ReplicationMonitor: UnderReplicatedBlocks has 3 blocks
+081109 203650 169 WARN dfs.ReplicationMonitor: Block blk_-1608999687919862906 is under-replicated: expected 3, actual 1
+081109 203652 170 WARN dfs.ReplicationMonitor: Block blk_-6670958622368987959 is under-replicated: expected 3, actual 1
+081109 203655 171 WARN dfs.ReplicationMonitor: Block blk_2550793407016982932 is under-replicated: expected 3, actual 0
+081109 203658 172 ERROR dfs.FSNamesystem: BLOCK* ask 10.251.73.220:50010 to delete blk_38865049064139660
+081109 203700 173 INFO dfs.DataNode$DataXceiver: Receiving block blk_8229193803249955061 src: /10.251.42.84:57340 dest: /10.251.42.84:50010
+081109 203702 174 INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: /user/root/rand/_temporary/_task_200811092030_0001_m_000600_0/part-00600. blk_752aborting
+081109 203705 175 ERROR dfs.DataNode: 10.251.73.220:50010:DataXceiver: java.io.IOException: Could not read from stream
+081109 203708 176 WARN dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: Redundant addStoredBlock request received for blk_8229193803249955061 on 10.251.42.84:50010 size 67108864
+081109 203710 177 ERROR dfs.ReplicationMonitor: Block blk_2550793407016982932 has 0 replicas. Needs immediate attention.

@@ -1,0 +1,25 @@
+081111 142200 301 INFO dfs.DataNode$DataXceiver: Receiving block blk_5765437685711346003 src: /10.251.75.155:34218 dest: /10.251.75.155:50010
+081111 142201 302 INFO dfs.DataNode$PacketResponder: PacketResponder 0 for block blk_5765437685711346003 terminating
+081111 142203 303 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.75.155:50010 is added to blk_5765437685711346003 size 67108864
+081111 142210 304 INFO dfs.DataNode$DataXceiver: Receiving block blk_8372615047839201456 src: /10.251.75.155:38901 dest: /10.251.75.155:50010
+081111 142215 305 WARN dfs.DataNode: 10.251.75.155:50010: Packet responder slow: 3002ms for blk_8372615047839201456
+081111 142220 306 ERROR dfs.DataNode: 10.251.75.155:50010:DataXceiver: java.lang.OutOfMemoryError: Java heap space
+081111 142221 307 ERROR dfs.DataNode: 10.251.75.155:50010:DataXceiver: java.lang.OutOfMemoryError: GC overhead limit exceeded
+081111 142222 308 WARN dfs.DataNode$PacketResponder: Slow packet processing for block blk_5765437685711346003: 8005ms
+081111 142225 309 ERROR dfs.DataNode: 10.251.75.155:50010: DataNode process is unresponsive, possible memory exhaustion
+081111 142228 310 INFO dfs.DataNode$DataXceiver: Receiving block blk_1029384756102938475 src: /10.251.203.41:55672 dest: /10.251.203.41:50010
+081111 142230 311 ERROR dfs.DataNode: 10.251.75.155:50010: java.lang.OutOfMemoryError: unable to create new native thread
+081111 142232 312 WARN dfs.FSNamesystem: BLOCK* NameSystem.processReport: DataNode 10.251.75.155:50010 heartbeat timeout
+081111 142235 313 ERROR dfs.FSNamesystem: BLOCK* NameSystem.processReport: DataNode 10.251.75.155:50010 declared dead
+081111 142238 314 INFO dfs.ReplicationMonitor: UnderReplicatedBlocks has 89 blocks
+081111 142240 315 WARN dfs.ReplicationMonitor: Block blk_5765437685711346003 is under-replicated: expected 3, actual 2
+081111 142242 316 WARN dfs.ReplicationMonitor: Block blk_8372615047839201456 is under-replicated: expected 3, actual 1
+081111 142245 317 INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: /user/root/rand/_temporary/_task_200811111422_0005_m_000250_0/part-00250. blk_6150482937015482930
+081111 142248 318 WARN dfs.DataNode: 10.251.203.41:50010: DataXceiver count has reached maximum: 4096
+081111 142250 319 ERROR dfs.DataNode: 10.251.203.41:50010:DataXceiver: java.io.IOException: Xceiver count exceeded maximum 4096
+081111 142252 320 INFO dfs.DataNode$DataXceiver: Receiving block blk_4837261504738261504 src: /10.251.110.15:42918 dest: /10.251.110.15:50010
+081111 142255 321 WARN dfs.FSNamesystem: Number of dead DataNodes: 1 (10.251.75.155:50010)
+081111 142258 322 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.203.41:50010 is added to blk_6150482937015482930 size 67108864
+081111 142300 323 INFO dfs.ReplicationMonitor: Scheduling replication for 89 blocks from remaining live DataNodes
+081111 142305 324 WARN dfs.DataNode: 10.251.110.15:50010: Packet responder slow: 5001ms for blk_4837261504738261504
+081111 142310 325 INFO dfs.FSNamesystem: BLOCK* NameSystem.processReport: Received block report from 10.251.110.15:50010 with 3892 blocks

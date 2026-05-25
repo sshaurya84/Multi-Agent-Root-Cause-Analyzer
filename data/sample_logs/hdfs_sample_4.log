@@ -1,0 +1,30 @@
+081112 091500 401 INFO dfs.DataNode$DataXceiver: Receiving block blk_3948571029384756100 src: /10.251.66.82:33102 dest: /10.251.66.82:50010
+081112 091501 402 INFO dfs.DataNode$PacketResponder: PacketResponder 2 for block blk_3948571029384756100 terminating
+081112 091503 403 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.66.82:50010 is added to blk_3948571029384756100 size 67108864
+081112 091510 404 INFO dfs.DataNode$DataXceiver: Receiving block blk_7182930465718293046 src: /10.251.66.82:38220 dest: /10.251.66.82:50010
+081112 091512 405 INFO dfs.DataNode$DataXceiver: Receiving block blk_6293847102938471029 src: /10.251.199.34:42671 dest: /10.251.199.34:50010
+081112 091515 406 ERROR dfs.DataNode: 10.251.66.82:50010:DataXceiver: java.io.IOException: Connection reset by peer
+081112 091516 407 ERROR dfs.DataNode: 10.251.199.34:50010:DataXceiver: java.io.IOException: Connection reset by peer
+081112 091518 408 ERROR dfs.DataNode: 10.251.66.82:50010:DataXceiver: java.net.SocketTimeoutException: Read timed out
+081112 091520 409 ERROR dfs.DataNode: 10.251.199.34:50010:DataXceiver: java.net.SocketTimeoutException: Read timed out
+081112 091522 410 WARN dfs.DataNode$DataXceiver: IOException in BlockReceiver for block blk_7182930465718293046: java.net.SocketTimeoutException: Read timed out
+081112 091525 411 WARN dfs.DataNode$DataXceiver: IOException in BlockReceiver for block blk_6293847102938471029: java.net.SocketTimeoutException: Read timed out
+081112 091528 412 ERROR dfs.FSNamesystem: BLOCK* NameSystem.processReport: DataNode 10.251.66.82:50010 heartbeat timeout
+081112 091530 413 ERROR dfs.FSNamesystem: BLOCK* NameSystem.processReport: DataNode 10.251.199.34:50010 heartbeat timeout
+081112 091532 414 WARN dfs.FSNamesystem: Network partition detected: rack /rack1 is unreachable
+081112 091535 415 ERROR dfs.FSNamesystem: BLOCK* NameSystem.processReport: DataNode 10.251.66.82:50010 declared dead
+081112 091536 416 ERROR dfs.FSNamesystem: BLOCK* NameSystem.processReport: DataNode 10.251.199.34:50010 declared dead
+081112 091540 417 INFO dfs.ReplicationMonitor: UnderReplicatedBlocks has 312 blocks
+081112 091542 418 WARN dfs.ReplicationMonitor: Block blk_3948571029384756100 is under-replicated: expected 3, actual 1
+081112 091545 419 WARN dfs.ReplicationMonitor: Block blk_7182930465718293046 is under-replicated: expected 3, actual 0
+081112 091548 420 WARN dfs.ReplicationMonitor: Block blk_6293847102938471029 is under-replicated: expected 3, actual 0
+081112 091550 421 WARN dfs.FSNamesystem: Number of dead DataNodes: 2 (10.251.66.82:50010, 10.251.199.34:50010)
+081112 091555 422 INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: /user/root/rand/_temporary/_task_200811120915_0008_m_000350_0/part-00350. blk_5019283746501928374
+081112 091558 423 ERROR dfs.DataNode: 10.251.110.15:50010: Failed to transfer block blk_5019283746501928374 to 10.251.66.82:50010: java.net.ConnectException: Connection refused
+081112 091600 424 ERROR dfs.DataNode: 10.251.110.15:50010: Failed to transfer block blk_5019283746501928374 to 10.251.199.34:50010: java.net.ConnectException: Connection refused
+081112 091605 425 INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.110.15:50010 is added to blk_5019283746501928374 size 67108864
+081112 091610 426 WARN dfs.FSNamesystem: Number of under-replicated blocks has exceeded critical threshold: 312 blocks at risk
+081112 091615 427 INFO dfs.ReplicationMonitor: Scheduling emergency replication for 312 blocks
+081112 091620 428 ERROR dfs.FSNamesystem: Insufficient DataNodes for replication: need 3, only 2 live nodes available
+081112 091625 429 INFO dfs.FSNamesystem: BLOCK* NameSystem.processReport: Received block report from 10.251.110.15:50010 with 5124 blocks
+081112 091630 430 WARN dfs.FSNamesystem: Entering safe mode: insufficient DataNodes reporting
