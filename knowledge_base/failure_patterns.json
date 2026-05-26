@@ -1,1 +1,138 @@
-[]
+[
+  {
+    "id": "pattern_001",
+    "name": "Connection Pool Exhaustion",
+    "description": "Database connection pool fills up causing cascading timeouts across dependent services",
+    "symptoms": ["connection timeout errors", "increasing retry counts", "database connection refused", "thread pool waiting", "slow query responses"],
+    "root_cause": "Connection pool limit reached due to slow queries or connection leaks",
+    "resolution": "Increase pool size, identify slow queries, check for connection leaks, implement connection timeout"
+  },
+  {
+    "id": "pattern_002",
+    "name": "Disk Space Full",
+    "description": "Storage volumes reach capacity causing write failures and service degradation across the cluster",
+    "symptoms": ["no space left on device", "write failures", "disk utilization above 95%", "failed volume", "data directory in failed state"],
+    "root_cause": "Disk space exhausted due to log accumulation, data growth, or failed cleanup jobs",
+    "resolution": "Free disk space, add storage capacity, configure log rotation, clean temporary files"
+  },
+  {
+    "id": "pattern_003",
+    "name": "Memory Leak (OOM)",
+    "description": "Progressive memory consumption leads to OutOfMemoryError and process crashes",
+    "symptoms": ["OutOfMemoryError", "java heap space", "GC overhead limit exceeded", "unable to create new native thread", "process unresponsive", "increasing memory usage"],
+    "root_cause": "Memory leak in application code or excessive memory allocation without proper garbage collection",
+    "resolution": "Increase heap size, analyze heap dumps, fix memory leaks, tune GC parameters"
+  },
+  {
+    "id": "pattern_004",
+    "name": "Network Partition",
+    "description": "Network connectivity loss between cluster nodes causing split-brain scenarios and data unavailability",
+    "symptoms": ["connection reset by peer", "socket timeout", "heartbeat timeout", "node declared dead", "rack unreachable", "connection refused"],
+    "root_cause": "Network switch failure, cable issues, or firewall misconfiguration isolating cluster nodes",
+    "resolution": "Check physical network infrastructure, review firewall rules, verify switch health, restore connectivity"
+  },
+  {
+    "id": "pattern_005",
+    "name": "Cascading Service Failure",
+    "description": "Single component failure triggers chain reaction of dependent service failures across the system",
+    "symptoms": ["multiple services failing simultaneously", "increasing error rates", "timeout cascade", "dependent service unavailable", "circuit breaker tripped"],
+    "root_cause": "Lack of fault isolation between services causing failure propagation through dependency chains",
+    "resolution": "Implement circuit breakers, add bulkheads, set proper timeouts, decouple service dependencies"
+  },
+  {
+    "id": "pattern_006",
+    "name": "High CPU Throttling",
+    "description": "CPU saturation causes processing delays, request timeouts, and degraded throughput",
+    "symptoms": ["CPU utilization above 90%", "slow processing", "request timeouts", "thread starvation", "high load average", "scheduler delays"],
+    "root_cause": "Resource-intensive computation, inefficient algorithms, or insufficient CPU allocation",
+    "resolution": "Optimize hot code paths, scale horizontally, increase CPU allocation, implement rate limiting"
+  },
+  {
+    "id": "pattern_007",
+    "name": "DNS Resolution Failure",
+    "description": "DNS lookup failures prevent service discovery and inter-service communication",
+    "symptoms": ["unknown host exception", "DNS resolution failed", "name resolution timeout", "service discovery unavailable", "connection to host failed"],
+    "root_cause": "DNS server overload, misconfigured DNS records, or network issues affecting DNS traffic",
+    "resolution": "Check DNS server health, verify DNS records, implement DNS caching, add fallback resolvers"
+  },
+  {
+    "id": "pattern_008",
+    "name": "Deadlock",
+    "description": "Circular resource dependency between threads or processes causing complete system stall",
+    "symptoms": ["thread blocked", "lock contention", "process hang", "no progress on requests", "thread dump shows waiting threads", "response time infinite"],
+    "root_cause": "Circular lock acquisition order between concurrent threads or distributed lock conflicts",
+    "resolution": "Fix lock ordering, implement lock timeouts, use tryLock with backoff, reduce lock scope"
+  },
+  {
+    "id": "pattern_009",
+    "name": "OOM Kill",
+    "description": "Operating system kills processes due to memory pressure, causing unexpected service termination",
+    "symptoms": ["process killed", "OOM killer invoked", "out of memory", "cgroup memory limit", "sudden process termination", "exit code 137"],
+    "root_cause": "System memory exhaustion triggering kernel OOM killer on the most memory-hungry process",
+    "resolution": "Set memory limits, add swap space, optimize memory usage, implement memory monitoring alerts"
+  },
+  {
+    "id": "pattern_010",
+    "name": "SSL Certificate Expiry",
+    "description": "Expired or invalid SSL certificates cause TLS handshake failures and broken secure connections",
+    "symptoms": ["SSL handshake failed", "certificate expired", "TLS error", "PKIX path validation failed", "unable to find valid certification path"],
+    "root_cause": "SSL/TLS certificate not renewed before expiration date",
+    "resolution": "Renew certificates, implement automated certificate rotation, set up expiry monitoring"
+  },
+  {
+    "id": "pattern_011",
+    "name": "Configuration Drift",
+    "description": "Inconsistent configuration across cluster nodes causing unpredictable behavior and failures",
+    "symptoms": ["inconsistent behavior across nodes", "config mismatch", "unexpected defaults", "feature flags inconsistent", "partial deployment"],
+    "root_cause": "Manual configuration changes applied inconsistently or failed configuration management sync",
+    "resolution": "Use centralized config management, implement config validation, audit configuration consistency"
+  },
+  {
+    "id": "pattern_012",
+    "name": "Log Rotation Failure",
+    "description": "Failed log rotation leads to disk space exhaustion and eventual service failure",
+    "symptoms": ["log file growing unbounded", "disk space decreasing", "no space left on device", "log directory consuming excessive space", "stale log files"],
+    "root_cause": "Log rotation daemon failed or misconfigured, logs not being cleaned up on schedule",
+    "resolution": "Fix logrotate configuration, restart log rotation daemon, manually clean old logs"
+  },
+  {
+    "id": "pattern_013",
+    "name": "Thread Pool Saturation",
+    "description": "All threads in the pool are occupied causing new requests to queue or be rejected",
+    "symptoms": ["thread pool exhausted", "request queue full", "rejected execution", "Xceiver count exceeded maximum", "too many connections", "task queue overflow"],
+    "root_cause": "Incoming request rate exceeds processing capacity or slow downstream calls hold threads",
+    "resolution": "Increase thread pool size, optimize request processing, implement backpressure, add request queuing"
+  },
+  {
+    "id": "pattern_014",
+    "name": "Split Brain in Cluster",
+    "description": "Network partition causes cluster to split into independent sub-clusters each believing they are the primary",
+    "symptoms": ["multiple masters detected", "conflicting leader election", "data inconsistency", "quorum lost", "brain split detected"],
+    "root_cause": "Network partition combined with insufficient quorum configuration allowing dual-master state",
+    "resolution": "Implement proper quorum-based leader election, add fencing mechanisms, fix network partition"
+  },
+  {
+    "id": "pattern_015",
+    "name": "Write-Ahead Log Corruption",
+    "description": "Corruption in write-ahead log prevents data recovery and causes inconsistent state",
+    "symptoms": ["WAL corrupted", "edit log corruption", "checksum mismatch", "unable to load edit log", "journal inconsistency", "recovery failed"],
+    "root_cause": "Unexpected process termination during WAL write, disk errors, or storage subsystem failure",
+    "resolution": "Restore from checkpoint, replay uncorrupted portion of WAL, check disk health"
+  },
+  {
+    "id": "pattern_016",
+    "name": "Block Under-Replication",
+    "description": "Data blocks have fewer replicas than required, risking data loss if more nodes fail",
+    "symptoms": ["under-replicated blocks", "replication factor not met", "expected replicas not available", "block has 0 replicas", "insufficient DataNodes"],
+    "root_cause": "DataNode failures reducing available replicas below the configured replication factor",
+    "resolution": "Restore failed DataNodes, trigger manual re-replication, verify replication factor settings"
+  },
+  {
+    "id": "pattern_017",
+    "name": "Garbage Collection Storm",
+    "description": "Frequent or long GC pauses cause application freezes and timeout cascades",
+    "symptoms": ["long GC pause", "stop-the-world", "GC overhead limit", "application pause", "full GC triggered", "promotion failure"],
+    "root_cause": "Heap pressure from large object allocation or memory fragmentation triggering frequent GC cycles",
+    "resolution": "Tune GC parameters, resize heap regions, reduce object allocation rate, switch GC algorithm"
+  }
+]
