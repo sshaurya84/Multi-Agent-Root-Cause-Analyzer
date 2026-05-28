@@ -1,0 +1,11 @@
+081127 110000 1901 INFO dfs.DataNode$DataXceiver: Receiving block blk_1919283746501928374 src: /10.251.220.10:48101 dest: /10.251.220.10:50010
+081127 110005 1902 INFO dfs.DataNode$PacketResponder: PacketResponder 1 for block blk_1919283746501928374 terminating
+081127 110010 1903 WARN dfs.FSNamesystem: BLOCK* NameSystem.processReport: DataNode 10.251.220.10:50010 heartbeat delayed: 30005ms
+081127 110015 1904 WARN dfs.FSNamesystem: BLOCK* NameSystem.processReport: DataNode 10.251.220.10:50010 heartbeat delayed: 60010ms
+081127 110020 1905 ERROR dfs.FSNamesystem: BLOCK* NameSystem.processReport: DataNode 10.251.220.10:50010 heartbeat timeout
+081127 110022 1906 ERROR dfs.FSNamesystem: BLOCK* NameSystem.processReport: DataNode 10.251.220.10:50010 declared dead
+081127 110025 1907 WARN dfs.FSNamesystem: BLOCK* NameSystem.processReport: DataNode 10.251.220.20:50010 heartbeat delayed: 45003ms
+081127 110028 1908 ERROR dfs.FSNamesystem: BLOCK* NameSystem.processReport: DataNode 10.251.220.20:50010 heartbeat timeout
+081127 110030 1909 ERROR dfs.FSNamesystem: BLOCK* NameSystem.processReport: DataNode 10.251.220.20:50010 declared dead
+081127 110035 1910 WARN dfs.FSNamesystem: Number of dead DataNodes: 2 (10.251.220.10:50010, 10.251.220.20:50010)
+081127 110038 1911 INFO dfs.ReplicationMonitor: UnderReplicatedBlocks has 340 blocks

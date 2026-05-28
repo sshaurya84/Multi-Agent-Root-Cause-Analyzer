@@ -1,0 +1,15 @@
+081114 150000 601 INFO dfs.DataNode$DataXceiver: Receiving block blk_6010293847561029384 src: /10.251.88.10:44102 dest: /10.251.88.10:50010
+081114 150005 602 ERROR dfs.DataNode: 10.251.88.10:50010:DataXceiver: java.io.IOException: Connection reset by peer
+081114 150008 603 ERROR dfs.FSNamesystem: BLOCK* NameSystem.processReport: DataNode 10.251.88.10:50010 heartbeat timeout
+081114 150010 604 ERROR dfs.FSNamesystem: BLOCK* NameSystem.processReport: DataNode 10.251.88.10:50010 declared dead
+081114 150012 605 WARN dfs.DataNode: 10.251.90.22:50010: Failed to transfer block blk_6010293847561029384 to 10.251.88.10:50010: java.net.ConnectException: Connection refused
+081114 150015 606 ERROR dfs.DataNode: 10.251.90.22:50010:DataXceiver: java.net.SocketTimeoutException: Read timed out
+081114 150018 607 WARN dfs.DataNode: 10.251.90.22:50010: Retrying block transfer to alternate DataNode
+081114 150020 608 ERROR dfs.DataNode: 10.251.90.22:50010:DataXceiver: java.io.IOException: Connection reset by peer
+081114 150022 609 ERROR dfs.FSNamesystem: BLOCK* NameSystem.processReport: DataNode 10.251.90.22:50010 heartbeat timeout
+081114 150025 610 ERROR dfs.FSNamesystem: BLOCK* NameSystem.processReport: DataNode 10.251.90.22:50010 declared dead
+081114 150028 611 INFO dfs.ReplicationMonitor: UnderReplicatedBlocks has 478 blocks
+081114 150030 612 WARN dfs.FSNamesystem: Number of dead DataNodes: 2 (10.251.88.10:50010, 10.251.90.22:50010)
+081114 150035 613 ERROR dfs.FSNamesystem: Insufficient DataNodes for replication: need 3, only 1 live node available
+081114 150038 614 WARN dfs.FSNamesystem: Entering safe mode: insufficient DataNodes reporting
+081114 150040 615 ERROR dfs.ReplicationMonitor: Block blk_6010293847561029384 has 0 replicas. Needs immediate attention.

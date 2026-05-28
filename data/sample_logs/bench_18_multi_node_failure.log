@@ -1,0 +1,13 @@
+081126 100000 1801 INFO dfs.DataNode$DataXceiver: Receiving block blk_1819283746501928374 src: /10.251.210.10:47101 dest: /10.251.210.10:50010
+081126 100005 1802 ERROR dfs.DataNode: 10.251.210.10:50010:DataXceiver: java.io.IOException: Connection reset by peer
+081126 100008 1803 ERROR dfs.FSNamesystem: BLOCK* NameSystem.processReport: DataNode 10.251.210.10:50010 declared dead
+081126 100010 1804 ERROR dfs.DataNode: 10.251.210.20:50010:DataXceiver: java.io.IOException: Connection reset by peer
+081126 100012 1805 ERROR dfs.FSNamesystem: BLOCK* NameSystem.processReport: DataNode 10.251.210.20:50010 declared dead
+081126 100015 1806 ERROR dfs.DataNode: 10.251.210.30:50010:DataXceiver: java.io.IOException: Connection reset by peer
+081126 100018 1807 ERROR dfs.FSNamesystem: BLOCK* NameSystem.processReport: DataNode 10.251.210.30:50010 declared dead
+081126 100020 1808 INFO dfs.ReplicationMonitor: UnderReplicatedBlocks has 650 blocks
+081126 100025 1809 INFO dfs.ReplicationMonitor: Scheduling emergency replication for 650 blocks
+081126 100028 1810 ERROR dfs.FSNamesystem: Insufficient DataNodes for replication: need 3, only 1 live node available
+081126 100030 1811 WARN dfs.FSNamesystem: Number of dead DataNodes: 3
+081126 100035 1812 WARN dfs.FSNamesystem: Entering safe mode: insufficient DataNodes reporting
+081126 100038 1813 ERROR dfs.ReplicationMonitor: Block blk_1819283746501928374 has 0 replicas. Needs immediate attention.

@@ -1,0 +1,12 @@
+081111 142200 301 INFO dfs.DataNode$DataXceiver: Receiving block blk_5765437685711346003 src: /10.251.75.155:34218 dest: /10.251.75.155:50010
+081111 142210 304 INFO dfs.DataNode$DataXceiver: Receiving block blk_8372615047839201456 src: /10.251.75.155:38901 dest: /10.251.75.155:50010
+081111 142215 305 WARN dfs.DataNode: 10.251.75.155:50010: Packet responder slow: 3002ms for blk_8372615047839201456
+081111 142220 306 ERROR dfs.DataNode: 10.251.75.155:50010:DataXceiver: java.lang.OutOfMemoryError: Java heap space
+081111 142221 307 ERROR dfs.DataNode: 10.251.75.155:50010:DataXceiver: java.lang.OutOfMemoryError: GC overhead limit exceeded
+081111 142222 308 WARN dfs.DataNode$PacketResponder: Slow packet processing for block blk_5765437685711346003: 8005ms
+081111 142225 309 ERROR dfs.DataNode: 10.251.75.155:50010: DataNode process is unresponsive, possible memory exhaustion
+081111 142230 311 ERROR dfs.DataNode: 10.251.75.155:50010: java.lang.OutOfMemoryError: unable to create new native thread
+081111 142232 312 WARN dfs.FSNamesystem: BLOCK* NameSystem.processReport: DataNode 10.251.75.155:50010 heartbeat timeout
+081111 142235 313 ERROR dfs.FSNamesystem: BLOCK* NameSystem.processReport: DataNode 10.251.75.155:50010 declared dead
+081111 142238 314 INFO dfs.ReplicationMonitor: UnderReplicatedBlocks has 89 blocks
+081111 142242 316 WARN dfs.ReplicationMonitor: Block blk_8372615047839201456 is under-replicated: expected 3, actual 1

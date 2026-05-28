@@ -1,0 +1,122 @@
+[
+  {
+    "log_file": "bench_01_network_partition.log",
+    "root_cause_category": "network partition",
+    "affected_services": ["dfs.DataNode", "dfs.FSNamesystem"],
+    "description": "Network partition isolating rack nodes"
+  },
+  {
+    "log_file": "bench_02_disk_full.log",
+    "root_cause_category": "disk space full",
+    "affected_services": ["dfs.DataNode", "dfs.FSNamesystem"],
+    "description": "Disk volumes at capacity causing write failures"
+  },
+  {
+    "log_file": "bench_03_oom.log",
+    "root_cause_category": "memory leak",
+    "affected_services": ["dfs.DataNode", "dfs.FSNamesystem"],
+    "description": "Java heap space exhaustion on DataNode"
+  },
+  {
+    "log_file": "bench_04_connection_reset.log",
+    "root_cause_category": "network partition",
+    "affected_services": ["dfs.DataNode", "dfs.FSNamesystem", "dfs.ReplicationMonitor"],
+    "description": "Connection resets causing block under-replication"
+  },
+  {
+    "log_file": "bench_05_block_underreplication.log",
+    "root_cause_category": "block under-replication",
+    "affected_services": ["dfs.ReplicationMonitor", "dfs.FSNamesystem"],
+    "description": "Multiple blocks under-replicated after node failure"
+  },
+  {
+    "log_file": "bench_06_cascading_failure.log",
+    "root_cause_category": "cascading service failure",
+    "affected_services": ["dfs.DataNode", "dfs.FSNamesystem", "dfs.ReplicationMonitor"],
+    "description": "Cascading failures across multiple DataNodes"
+  },
+  {
+    "log_file": "bench_07_disk_full_2.log",
+    "root_cause_category": "disk space full",
+    "affected_services": ["dfs.DataNode"],
+    "description": "All data directories in failed state due to disk full"
+  },
+  {
+    "log_file": "bench_08_network_timeout.log",
+    "root_cause_category": "network partition",
+    "affected_services": ["dfs.DataNode", "dfs.FSNamesystem"],
+    "description": "Socket timeouts indicating network issues"
+  },
+  {
+    "log_file": "bench_09_oom_gc.log",
+    "root_cause_category": "memory leak",
+    "affected_services": ["dfs.DataNode"],
+    "description": "GC overhead limit exceeded leading to OOM"
+  },
+  {
+    "log_file": "bench_10_thread_exhaustion.log",
+    "root_cause_category": "thread pool saturation",
+    "affected_services": ["dfs.DataNode"],
+    "description": "Xceiver thread count exceeded maximum"
+  },
+  {
+    "log_file": "bench_11_network_partition_2.log",
+    "root_cause_category": "network partition",
+    "affected_services": ["dfs.DataNode", "dfs.FSNamesystem"],
+    "description": "Multiple nodes in same rack become unreachable"
+  },
+  {
+    "log_file": "bench_12_block_corruption.log",
+    "root_cause_category": "write-ahead log corruption",
+    "affected_services": ["dfs.FSNamesystem", "dfs.DataNode"],
+    "description": "Block checksum errors indicating data corruption"
+  },
+  {
+    "log_file": "bench_13_cascading_timeout.log",
+    "root_cause_category": "cascading service failure",
+    "affected_services": ["dfs.DataNode", "dfs.FSNamesystem"],
+    "description": "Cascading timeouts after initial node failure"
+  },
+  {
+    "log_file": "bench_14_disk_high_util.log",
+    "root_cause_category": "disk space full",
+    "affected_services": ["dfs.DataNode", "dfs.FSNamesystem"],
+    "description": "High disk utilization causing slow writes"
+  },
+  {
+    "log_file": "bench_15_oom_native_thread.log",
+    "root_cause_category": "memory leak",
+    "affected_services": ["dfs.DataNode", "dfs.FSNamesystem"],
+    "description": "Unable to create native threads due to memory exhaustion"
+  },
+  {
+    "log_file": "bench_16_safe_mode.log",
+    "root_cause_category": "block under-replication",
+    "affected_services": ["dfs.FSNamesystem", "dfs.ReplicationMonitor"],
+    "description": "System entering safe mode due to under-replicated blocks"
+  },
+  {
+    "log_file": "bench_17_connection_refused.log",
+    "root_cause_category": "network partition",
+    "affected_services": ["dfs.DataNode", "dfs.FSNamesystem"],
+    "description": "Connection refused errors to multiple DataNodes"
+  },
+  {
+    "log_file": "bench_18_multi_node_failure.log",
+    "root_cause_category": "cascading service failure",
+    "affected_services": ["dfs.DataNode", "dfs.FSNamesystem", "dfs.ReplicationMonitor"],
+    "description": "Multiple DataNode failures triggering emergency replication"
+  },
+  {
+    "log_file": "bench_19_heartbeat_timeout.log",
+    "root_cause_category": "network partition",
+    "affected_services": ["dfs.FSNamesystem", "dfs.DataNode"],
+    "description": "Heartbeat timeouts causing node declarations of death"
+  },
+  {
+    "log_file": "bench_20_mixed_failure.log",
+    "root_cause_category": "cascading service failure",
+    "affected_services": ["dfs.DataNode", "dfs.FSNamesystem", "dfs.ReplicationMonitor"],
+    "description": "Mixed IO errors and disk issues causing cascading node failures"
+  }
+]

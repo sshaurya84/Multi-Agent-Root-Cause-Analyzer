@@ -1,0 +1,10 @@
+081118 130000 1001 INFO dfs.DataNode$DataXceiver: Receiving block blk_1019283746501928001 src: /10.251.95.40:44201 dest: /10.251.95.40:50010
+081118 130010 1003 WARN dfs.DataNode: 10.251.95.40:50010: DataXceiver count has reached 3800/4096
+081118 130015 1004 WARN dfs.DataNode: 10.251.95.40:50010: DataXceiver count has reached 3950/4096
+081118 130018 1005 WARN dfs.DataNode: 10.251.95.40:50010: DataXceiver count has reached maximum: 4096
+081118 130020 1006 ERROR dfs.DataNode: 10.251.95.40:50010:DataXceiver: java.io.IOException: Xceiver count exceeded maximum 4096
+081118 130022 1007 ERROR dfs.DataNode: 10.251.95.40:50010:DataXceiver: java.io.IOException: Xceiver count exceeded maximum 4096
+081118 130025 1008 WARN dfs.DataNode$PacketResponder: Slow packet processing for block blk_1019283746501928001: 15002ms
+081118 130028 1009 ERROR dfs.DataNode: 10.251.95.40:50010: DataNode rejecting new connections
+081118 130030 1010 WARN dfs.FSNamesystem: BLOCK* NameSystem.processReport: DataNode 10.251.95.40:50010 heartbeat timeout
+081118 130035 1011 INFO dfs.ReplicationMonitor: UnderReplicatedBlocks has 45 blocks

@@ -1,0 +1,11 @@
+081121 170000 1301 INFO dfs.DataNode$DataXceiver: Receiving block blk_1319283746501928374 src: /10.251.160.10:43101 dest: /10.251.160.10:50010
+081121 170005 1302 ERROR dfs.DataNode: 10.251.160.10:50010:DataXceiver: java.net.SocketTimeoutException: Read timed out
+081121 170008 1303 ERROR dfs.FSNamesystem: BLOCK* NameSystem.processReport: DataNode 10.251.160.10:50010 heartbeat timeout
+081121 170010 1304 ERROR dfs.FSNamesystem: BLOCK* NameSystem.processReport: DataNode 10.251.160.10:50010 declared dead
+081121 170012 1305 WARN dfs.DataNode: 10.251.160.20:50010: Failed to transfer block blk_1319283746501928374 to 10.251.160.10:50010: java.net.ConnectException: Connection refused
+081121 170015 1306 ERROR dfs.DataNode: 10.251.160.20:50010:DataXceiver: java.net.SocketTimeoutException: Read timed out
+081121 170018 1307 ERROR dfs.DataNode: 10.251.160.30:50010:DataXceiver: java.net.SocketTimeoutException: Read timed out
+081121 170020 1308 ERROR dfs.FSNamesystem: BLOCK* NameSystem.processReport: DataNode 10.251.160.20:50010 heartbeat timeout
+081121 170022 1309 ERROR dfs.FSNamesystem: BLOCK* NameSystem.processReport: DataNode 10.251.160.20:50010 declared dead
+081121 170025 1310 INFO dfs.ReplicationMonitor: UnderReplicatedBlocks has 390 blocks
+081121 170028 1311 ERROR dfs.FSNamesystem: Insufficient DataNodes for replication: need 3, only 1 live node available

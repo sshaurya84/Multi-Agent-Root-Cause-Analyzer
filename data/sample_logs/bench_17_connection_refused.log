@@ -1,0 +1,11 @@
+081125 090000 1701 INFO dfs.DataNode$DataXceiver: Receiving block blk_1719283746501928374 src: /10.251.200.10:46101 dest: /10.251.200.10:50010
+081125 090005 1702 ERROR dfs.DataNode: 10.251.200.10:50010: Failed to transfer block blk_1719283746501928374 to 10.251.200.20:50010: java.net.ConnectException: Connection refused
+081125 090008 1703 ERROR dfs.DataNode: 10.251.200.10:50010: Failed to transfer block blk_1719283746501928374 to 10.251.200.30:50010: java.net.ConnectException: Connection refused
+081125 090010 1704 WARN dfs.DataNode: 10.251.200.10:50010: Retrying block transfer to alternate DataNode
+081125 090012 1705 ERROR dfs.DataNode: 10.251.200.10:50010: Failed to transfer block blk_1729384756102938475 to 10.251.200.20:50010: java.net.ConnectException: Connection refused
+081125 090015 1706 ERROR dfs.FSNamesystem: BLOCK* NameSystem.processReport: DataNode 10.251.200.20:50010 heartbeat timeout
+081125 090018 1707 ERROR dfs.FSNamesystem: BLOCK* NameSystem.processReport: DataNode 10.251.200.30:50010 heartbeat timeout
+081125 090020 1708 ERROR dfs.FSNamesystem: BLOCK* NameSystem.processReport: DataNode 10.251.200.20:50010 declared dead
+081125 090022 1709 ERROR dfs.FSNamesystem: BLOCK* NameSystem.processReport: DataNode 10.251.200.30:50010 declared dead
+081125 090025 1710 INFO dfs.ReplicationMonitor: UnderReplicatedBlocks has 280 blocks
+081125 090028 1711 WARN dfs.FSNamesystem: Number of dead DataNodes: 2 (10.251.200.20:50010, 10.251.200.30:50010)

@@ -1,0 +1,12 @@
+081116 110000 801 INFO dfs.DataNode$DataXceiver: Receiving block blk_8019283746501928374 src: /10.251.120.50:41203 dest: /10.251.120.50:50010
+081116 110005 802 INFO dfs.DataNode$DataXceiver: Receiving block blk_8029384756102938475 src: /10.251.120.55:43205 dest: /10.251.120.55:50010
+081116 110010 803 ERROR dfs.DataNode: 10.251.120.50:50010:DataXceiver: java.net.SocketTimeoutException: Read timed out
+081116 110012 804 ERROR dfs.DataNode: 10.251.120.55:50010:DataXceiver: java.net.SocketTimeoutException: Read timed out
+081116 110015 805 WARN dfs.DataNode$DataXceiver: IOException in BlockReceiver for block blk_8019283746501928374: java.net.SocketTimeoutException: Read timed out
+081116 110018 806 WARN dfs.DataNode$DataXceiver: IOException in BlockReceiver for block blk_8029384756102938475: java.net.SocketTimeoutException: Read timed out
+081116 110020 807 ERROR dfs.DataNode: 10.251.120.50:50010:DataXceiver: java.io.IOException: Connection reset by peer
+081116 110025 808 ERROR dfs.FSNamesystem: BLOCK* NameSystem.processReport: DataNode 10.251.120.50:50010 heartbeat timeout
+081116 110028 809 ERROR dfs.FSNamesystem: BLOCK* NameSystem.processReport: DataNode 10.251.120.55:50010 heartbeat timeout
+081116 110030 810 ERROR dfs.FSNamesystem: BLOCK* NameSystem.processReport: DataNode 10.251.120.50:50010 declared dead
+081116 110032 811 ERROR dfs.FSNamesystem: BLOCK* NameSystem.processReport: DataNode 10.251.120.55:50010 declared dead
+081116 110035 812 INFO dfs.ReplicationMonitor: UnderReplicatedBlocks has 189 blocks

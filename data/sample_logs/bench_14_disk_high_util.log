@@ -1,0 +1,11 @@
+081122 060000 1401 INFO dfs.DataNode$DataXceiver: Receiving block blk_1419283746501928374 src: /10.251.170.10:44101 dest: /10.251.170.10:50010
+081122 060005 1402 WARN dfs.DataNode: 10.251.170.10:50010: High disk utilization at 92% on /data1/dfs/data
+081122 060010 1403 WARN dfs.DataNode: 10.251.170.10:50010: High disk utilization at 94% on /data1/dfs/data
+081122 060015 1404 WARN dfs.DataNode: Slow BlockReceiver for block blk_1419283746501928374: 8003ms elapsed for 67108864 bytes
+081122 060020 1405 WARN dfs.DataNode: 10.251.170.10:50010: High disk utilization at 97% on /data1/dfs/data
+081122 060025 1406 ERROR dfs.DataNode: 10.251.170.10:50010: Disk error on /data1/dfs/data: No space left on device
+081122 060028 1407 WARN dfs.DataNode: 10.251.170.10:50010: High disk utilization at 96% on /data2/dfs/data
+081122 060030 1408 ERROR dfs.DataNode: 10.251.170.10:50010: Disk error on /data2/dfs/data: No space left on device
+081122 060035 1409 ERROR dfs.DataNode: All directories in dfs.data.dir are in failed state
+081122 060038 1410 ERROR dfs.FSNamesystem: BLOCK* NameSystem.processReport: DataNode 10.251.170.10:50010 removed from cluster
+081122 060040 1411 INFO dfs.ReplicationMonitor: UnderReplicatedBlocks has 178 blocks

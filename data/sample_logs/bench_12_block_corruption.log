@@ -1,0 +1,11 @@
+081120 160000 1201 INFO dfs.DataNode$DataXceiver: Receiving block blk_1219283746501928374 src: /10.251.150.30:42101 dest: /10.251.150.30:50010
+081120 160005 1202 ERROR dfs.DataNode: 10.251.150.30:50010: Block blk_1219283746501928374 checksum mismatch: expected 0xABCDEF01, got 0x12345678
+081120 160008 1203 ERROR dfs.DataNode: 10.251.150.30:50010: Block blk_1229384756102938475 checksum mismatch: expected 0xFEDCBA98, got 0x87654321
+081120 160010 1204 WARN dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: block blk_1219283746501928374 corrupt on 10.251.150.30:50010
+081120 160012 1205 WARN dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: block blk_1229384756102938475 corrupt on 10.251.150.30:50010
+081120 160015 1206 ERROR dfs.FSNamesystem: Edit log checksum mismatch at transaction 15042
+081120 160018 1207 ERROR dfs.FSNamesystem: Unable to load edit log segment: journal inconsistency detected
+081120 160020 1208 WARN dfs.DataNode: 10.251.150.30:50010: Disk I/O error rate elevated: 15 errors in last 60 seconds
+081120 160025 1209 ERROR dfs.FSNamesystem: Recovery failed for edit log segment 15040-15042
+081120 160028 1210 INFO dfs.ReplicationMonitor: Scheduling re-replication for 2 corrupt blocks
+081120 160030 1211 WARN dfs.FSNamesystem: Data integrity alert: multiple checksum failures detected

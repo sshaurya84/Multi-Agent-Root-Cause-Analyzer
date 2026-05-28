@@ -1,0 +1,15 @@
+081128 120000 2001 INFO dfs.DataNode$DataXceiver: Receiving block blk_2019283746501928374 src: /10.251.230.10:49101 dest: /10.251.230.10:50010
+081128 120005 2002 ERROR dfs.DataNode: 10.251.230.10:50010:DataXceiver: java.io.IOException: Connection reset by peer
+081128 120008 2003 WARN dfs.DataNode: 10.251.230.10:50010: High disk utilization at 96% on /data1/dfs/data
+081128 120010 2004 ERROR dfs.DataNode: 10.251.230.10:50010: Disk error on /data1/dfs/data: No space left on device
+081128 120012 2005 ERROR dfs.DataNode: 10.251.230.10:50010:DataXceiver: java.io.IOException: Connection reset by peer
+081128 120015 2006 ERROR dfs.FSNamesystem: BLOCK* NameSystem.processReport: DataNode 10.251.230.10:50010 heartbeat timeout
+081128 120018 2007 ERROR dfs.FSNamesystem: BLOCK* NameSystem.processReport: DataNode 10.251.230.10:50010 declared dead
+081128 120020 2008 ERROR dfs.DataNode: 10.251.230.20:50010:DataXceiver: java.io.IOException: Broken pipe
+081128 120022 2009 ERROR dfs.DataNode: 10.251.230.20:50010:DataXceiver: java.net.SocketTimeoutException: Read timed out
+081128 120025 2010 ERROR dfs.FSNamesystem: BLOCK* NameSystem.processReport: DataNode 10.251.230.20:50010 declared dead
+081128 120028 2011 INFO dfs.ReplicationMonitor: UnderReplicatedBlocks has 410 blocks
+081128 120030 2012 INFO dfs.ReplicationMonitor: Scheduling emergency replication for 410 blocks
+081128 120035 2013 ERROR dfs.FSNamesystem: Insufficient DataNodes for replication: need 3, only 1 live node available
+081128 120038 2014 WARN dfs.FSNamesystem: Entering safe mode: insufficient DataNodes reporting
+081128 120040 2015 ERROR dfs.ReplicationMonitor: Block blk_2019283746501928374 has 0 replicas. Needs immediate attention.

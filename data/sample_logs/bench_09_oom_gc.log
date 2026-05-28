@@ -1,0 +1,10 @@
+081117 090000 901 INFO dfs.DataNode$DataXceiver: Receiving block blk_9019283746501928374 src: /10.251.80.70:38102 dest: /10.251.80.70:50010
+081117 090005 902 WARN dfs.DataNode: 10.251.80.70:50010: GC pause 2500ms
+081117 090010 903 WARN dfs.DataNode: 10.251.80.70:50010: GC pause 5100ms
+081117 090015 904 ERROR dfs.DataNode: 10.251.80.70:50010:DataXceiver: java.lang.OutOfMemoryError: GC overhead limit exceeded
+081117 090018 905 WARN dfs.DataNode$PacketResponder: Slow packet processing for block blk_9019283746501928374: 12005ms
+081117 090020 906 ERROR dfs.DataNode: 10.251.80.70:50010:DataXceiver: java.lang.OutOfMemoryError: Java heap space
+081117 090022 907 ERROR dfs.DataNode: 10.251.80.70:50010: DataNode process is unresponsive, possible memory exhaustion
+081117 090025 908 WARN dfs.FSNamesystem: BLOCK* NameSystem.processReport: DataNode 10.251.80.70:50010 heartbeat timeout
+081117 090028 909 ERROR dfs.FSNamesystem: BLOCK* NameSystem.processReport: DataNode 10.251.80.70:50010 declared dead
+081117 090030 910 INFO dfs.ReplicationMonitor: UnderReplicatedBlocks has 67 blocks

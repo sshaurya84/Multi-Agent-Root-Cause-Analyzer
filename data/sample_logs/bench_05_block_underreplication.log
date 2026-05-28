@@ -1,0 +1,14 @@
+081113 100200 501 INFO dfs.FSNamesystem: BLOCK* NameSystem.processReport: Received block report from 10.251.43.115:50010 with 4521 blocks
+081113 100205 502 INFO dfs.ReplicationMonitor: UnderReplicatedBlocks has 245 blocks
+081113 100208 503 WARN dfs.ReplicationMonitor: Block blk_1234567890123456001 is under-replicated: expected 3, actual 2
+081113 100210 504 WARN dfs.ReplicationMonitor: Block blk_1234567890123456002 is under-replicated: expected 3, actual 1
+081113 100212 505 WARN dfs.ReplicationMonitor: Block blk_1234567890123456003 is under-replicated: expected 3, actual 0
+081113 100215 506 WARN dfs.ReplicationMonitor: Block blk_1234567890123456004 is under-replicated: expected 3, actual 1
+081113 100218 507 WARN dfs.ReplicationMonitor: Block blk_1234567890123456005 is under-replicated: expected 3, actual 0
+081113 100220 508 ERROR dfs.ReplicationMonitor: Block blk_1234567890123456003 has 0 replicas. Needs immediate attention.
+081113 100222 509 ERROR dfs.ReplicationMonitor: Block blk_1234567890123456005 has 0 replicas. Needs immediate attention.
+081113 100225 510 WARN dfs.FSNamesystem: Number of under-replicated blocks has exceeded critical threshold: 245 blocks at risk
+081113 100228 511 INFO dfs.ReplicationMonitor: Scheduling emergency replication for 245 blocks
+081113 100230 512 ERROR dfs.FSNamesystem: Insufficient DataNodes for replication: need 3, only 2 live nodes available
+081113 100235 513 WARN dfs.FSNamesystem: Entering safe mode: insufficient DataNodes reporting
+081113 100240 514 INFO dfs.FSNamesystem: Number of dead DataNodes: 2

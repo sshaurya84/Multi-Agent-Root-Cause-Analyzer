@@ -1,0 +1,10 @@
+081123 070000 1501 INFO dfs.DataNode$DataXceiver: Receiving block blk_1519283746501928374 src: /10.251.180.10:45101 dest: /10.251.180.10:50010
+081123 070005 1502 WARN dfs.DataNode: 10.251.180.10:50010: Packet responder slow: 4002ms for blk_1519283746501928374
+081123 070010 1503 ERROR dfs.DataNode: 10.251.180.10:50010:DataXceiver: java.lang.OutOfMemoryError: unable to create new native thread
+081123 070012 1504 ERROR dfs.DataNode: 10.251.180.10:50010:DataXceiver: java.lang.OutOfMemoryError: unable to create new native thread
+081123 070015 1505 ERROR dfs.DataNode: 10.251.180.10:50010:DataXceiver: java.lang.OutOfMemoryError: Java heap space
+081123 070018 1506 ERROR dfs.DataNode: 10.251.180.10:50010: DataNode process is unresponsive, possible memory exhaustion
+081123 070020 1507 WARN dfs.FSNamesystem: BLOCK* NameSystem.processReport: DataNode 10.251.180.10:50010 heartbeat timeout
+081123 070022 1508 ERROR dfs.FSNamesystem: BLOCK* NameSystem.processReport: DataNode 10.251.180.10:50010 declared dead
+081123 070025 1509 INFO dfs.ReplicationMonitor: UnderReplicatedBlocks has 72 blocks
+081123 070028 1510 WARN dfs.ReplicationMonitor: Block blk_1519283746501928374 is under-replicated: expected 3, actual 1

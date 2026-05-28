@@ -1,0 +1,13 @@
+081109 203615 148 INFO dfs.DataNode$PacketResponder: PacketResponder 1 for block blk_38865049064139660 terminating
+081109 203615 150 INFO dfs.DataNode$DataXceiver: Receiving block blk_-1608999687919862906 src: /10.251.73.220:42557 dest: /10.251.73.220:50010
+081109 203618 152 WARN dfs.DataNode$DataXceiver: IOException in BlockReceiver for block blk_-1608999687919862906: java.io.IOException: Connection reset by peer
+081109 203618 153 ERROR dfs.DataNode: 10.251.73.220:50010:DataXceiver: java.io.IOException: Connection reset by peer
+081109 203627 158 ERROR dfs.DataNode: 10.251.42.84:50010:DataXceiver: java.io.IOException: Broken pipe
+081109 203635 162 ERROR dfs.DataNode: 10.251.195.96:50010:DataXceiver: java.io.IOException: Connection reset by peer
+081109 203640 165 ERROR dfs.DataNode: 10.251.195.96:50010:DataXceiver: java.io.IOException: Connection reset by peer
+081109 203645 167 ERROR dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: block blk_2550793407016982932 not in any file
+081109 203648 168 INFO dfs.ReplicationMonitor: UnderReplicatedBlocks has 3 blocks
+081109 203650 169 WARN dfs.ReplicationMonitor: Block blk_-1608999687919862906 is under-replicated: expected 3, actual 1
+081109 203652 170 WARN dfs.ReplicationMonitor: Block blk_-6670958622368987959 is under-replicated: expected 3, actual 1
+081109 203655 171 WARN dfs.ReplicationMonitor: Block blk_2550793407016982932 is under-replicated: expected 3, actual 0
+081109 203710 177 ERROR dfs.ReplicationMonitor: Block blk_2550793407016982932 has 0 replicas. Needs immediate attention.

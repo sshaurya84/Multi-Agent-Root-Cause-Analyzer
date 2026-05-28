@@ -1,0 +1,13 @@
+081119 140000 1101 INFO dfs.DataNode$DataXceiver: Receiving block blk_1119283746501928374 src: /10.251.130.10:41001 dest: /10.251.130.10:50010
+081119 140010 1103 ERROR dfs.DataNode: 10.251.130.10:50010:DataXceiver: java.io.IOException: Connection reset by peer
+081119 140012 1104 ERROR dfs.DataNode: 10.251.130.15:50010:DataXceiver: java.io.IOException: Connection reset by peer
+081119 140015 1105 ERROR dfs.DataNode: 10.251.130.20:50010:DataXceiver: java.io.IOException: Connection reset by peer
+081119 140018 1106 ERROR dfs.FSNamesystem: BLOCK* NameSystem.processReport: DataNode 10.251.130.10:50010 heartbeat timeout
+081119 140020 1107 ERROR dfs.FSNamesystem: BLOCK* NameSystem.processReport: DataNode 10.251.130.15:50010 heartbeat timeout
+081119 140022 1108 ERROR dfs.FSNamesystem: BLOCK* NameSystem.processReport: DataNode 10.251.130.20:50010 heartbeat timeout
+081119 140025 1109 WARN dfs.FSNamesystem: Network partition detected: rack /rack2 is unreachable
+081119 140028 1110 ERROR dfs.FSNamesystem: BLOCK* NameSystem.processReport: DataNode 10.251.130.10:50010 declared dead
+081119 140030 1111 ERROR dfs.FSNamesystem: BLOCK* NameSystem.processReport: DataNode 10.251.130.15:50010 declared dead
+081119 140032 1112 ERROR dfs.FSNamesystem: BLOCK* NameSystem.processReport: DataNode 10.251.130.20:50010 declared dead
+081119 140035 1113 WARN dfs.FSNamesystem: Number of dead DataNodes: 3
+081119 140038 1114 INFO dfs.ReplicationMonitor: UnderReplicatedBlocks has 520 blocks
